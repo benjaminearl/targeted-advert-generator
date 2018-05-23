@@ -1,0 +1,68 @@
+.container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.ad {
+	flex: 0 1 25%;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.ad img {
+	width: 100%;
+	display: block;
+}
+
+.ad .model > span {
+	display: block;
+	font-family: sans-serif;
+	font-size: 14px;
+	display: flex;
+}
+
+.ad .model {
+	padding: 5px
+}
+.ad .model > span > span {
+	flex: 1 1 50%;	
+}
+
+#controls {
+	display: flex;
+}
+
+#controls div {
+	flex: 1 1 20%;
+	padding-top: 20px;
+
+}
+
+#controls div.inactive {
+	opacity: 0.5;
+}
+
+#controls div:not(.inactive) h4 {
+	color: #16d616;
+}
+h4 {
+	margin: 5px 0 30px 0;
+	text-align: center;
+}
+
+#controls input {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+
+}
+
