@@ -49,6 +49,16 @@ module.exports = {
 		let text = this.getText(typeObject);
 		return text.replace(/\[product\]/gi, product);
 	},
+	getWho: function(typeObject, gender){
+		const folderPath = './data/'+typeObject.longName+'/who/'+gender;
+		let folders = fs.readdirSync(folderPath);
+		folders = this.removeSystemFiles(folders);
+		const index = Math.floor(this.mapRange(typeObject.value, -5, 5, folders.length-1, 0));
+		let whos = fs.readdirSync(folderPath+'/'+folders[index]);
+		whos = this.removeSystemFiles(whos);
+		const who = whos[Math.floor(Math.random() * whos.length)];
+		return folderPath+'/'+folders[index]+'/'+who;
+
 
 	},
 	getColor: function(typeObject){
