@@ -4,18 +4,18 @@ const utils = require('./methods');
 
 
 
-for(var i = 1; i <= 200; i++){
+for(var i = 1; i <= 100; i++){
 	var product = utils.getProduct();
-	var gender = Math.random() < 0.5 ? 'female' : 'male'
+	var gender = Math.random() < 0.5 ? 'female' : 'female'
 	var score = i % 2 === 0 ? -5 : 5;
 
 
 		let ocean = {
-		O: 4.5,
-		C: -4,
-		E: -2,
-		A: -5,
-		N: -1,
+			O: -5 + Math.random() * 10,
+			C: -5 + Math.random() * 10,
+			E: -5 + Math.random() * 10,
+			A: -5 + Math.random() * 10,
+			N: -5 + Math.random() * 10,
 	};
 
 	let sorted = utils.sortScores(ocean);
@@ -41,11 +41,9 @@ function split(text){
 }
 
 function createAdvert(typeObjects, meta){
-	//console.log(typeObjects);
 	const background = utils.getBackground(typeObjects[0]);
 	
 	const timeStampInMs = Date.now();
-	//const what = utils.getWhat(typeObjects[0]);
 	const tmpFilename = './tmp/'+timeStampInMs+'.png';
 	const directions = ['East', 'West'];
 	const gravity = directions[Math.floor(Math.random() * directions.length)];
@@ -55,7 +53,6 @@ function createAdvert(typeObjects, meta){
 
 	const who = utils.getWho(typeObjects[1], meta.gender);
 	const what = utils.getWhat(typeObjects[0], oppositegravity, meta.product);
-	//console.log(font);
 
 	gm()
 	.command("composite")
@@ -69,12 +66,16 @@ function createAdvert(typeObjects, meta){
 		  	const lines = split(utils.getProductText(typeObjects[0], meta.product));
 		  	const tmpFilename2 = './tmp/'+timeStampInMs+'-2.png';
 
+			  var blue = '#85D2DA'
+
 		  	gm(tmpFilename)
-		  	.fill(color)
-		  	//.stroke('#000000')
-			.font(font, 35)
-			.drawText(30, 50, lines[0])
-			.drawText(30, 90, lines[1])		
+		  	.fill(blue)
+			.font(font, 110)
+			.drawRectangle(0, 1100, 1500, 1500).fill(color)
+			.drawText(25, 1230, lines[0])
+			.drawText(25, 1360, lines[1])
+			.drawRectangle(0, 1420, 1500, 1500).fill(blue).font(font, 60)
+			.drawText(25, 1480, 'YES TO MORE JOBS IN THE ECONOMY')		
 			.write(tmpFilename2, function (err) {
 				if (!err) console.log('done');
 				let json = {

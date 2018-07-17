@@ -50,7 +50,17 @@ module.exports = {
 		return text.replace(/\[product\]/gi, product);
 	},
 
+	getWho: function(typeObject, gender){
+		const folderPath = './data/'+typeObject.longName+'/who/'+gender;
+		let folders = fs.readdirSync(folderPath);
+		folders = this.removeSystemFiles(folders);
+		const index = Math.floor(this.mapRange(typeObject.value, -5, 5, folders.length-1, 0));
+		let whos = fs.readdirSync(folderPath+'/'+folders[index]);
+		whos = this.removeSystemFiles(whos);
+		const who = whos[Math.floor(Math.random() * whos.length)];
+		return folderPath+'/'+folders[index]+'/'+who;
 	},
+
 	getColor: function(typeObject){
 		var colors = JSON.parse(fs.readFileSync('./data/colors.json', 'utf-8'));
 		var amount = 'high';
@@ -129,4 +139,4 @@ module.exports = {
 		return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 	}
 
-}
+} 

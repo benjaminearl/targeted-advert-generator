@@ -120,13 +120,13 @@ function getModels(){
 function appendAds(ads){
 	ads.forEach(function(ad, i){
 		//if(i < 10){
-		const model = createModel(ad);
+		// const model = createModel(ad);
 		const image = document.createElement('img');
 		image.src = '../generated/'+ad.image;
 		const el = document.createElement('div');
 		el.classList.add('ad');
 		el.appendChild(image);
-		el.appendChild(model);
+		// el.appendChild(model);
 		
 		ad.model.forEach(function(type){
 			el.dataset[type.longName] = type.value;
@@ -138,7 +138,7 @@ function appendAds(ads){
 
 function createModel(ad){
 	const el = document.createElement('div');
-	el.classList.add('model');
+	// el.classList.add('model');
 	let innerHTML = '';
 	ad.model.forEach(function(type){
 		innerHTML += `

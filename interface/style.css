@@ -13,9 +13,8 @@ body {
 }
 
 .ad {
-	flex: 0 1 25%;
 	margin-bottom: 20px;
-	padding: 10px;
+	padding: 50 300px;
 }
 
 .ad img {
@@ -38,12 +37,11 @@ body {
 }
 
 #controls {
-	display: flex;
 }
 
 #controls div {
-	flex: 1 1 20%;
-	padding-top: 20px;
+	flex: 1 1 40%;
+	padding-top:80px;
 
 }
 
@@ -51,10 +49,15 @@ body {
 	opacity: 0.5;
 }
 
-#controls div:not(.inactive) h4 {
+#controls div:not(.inactive) h3 {
 	color: #16d616;
 }
 h4 {
+	margin: 5px 0 30px 0;
+	text-align: center;
+}
+
+h1 {
 	margin: 5px 0 30px 0;
 	text-align: center;
 }
@@ -64,5 +67,9 @@ h4 {
 	margin: 0 auto;
 	display: block;
 
+}
+
+#title {
+	padding-top: 90px;
 }
 
