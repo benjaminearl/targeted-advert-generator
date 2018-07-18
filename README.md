@@ -6,6 +6,7 @@ This directory features a set of pre-generated ads. To generate more:
 3. `node index.js`
 
 To host the app locally:
+
 [http-server](https://www.npmjs.com/package/http-server) is required, install globally.
 
 1. `cd interface`
