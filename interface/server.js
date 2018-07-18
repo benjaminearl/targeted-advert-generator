@@ -1,9 +1,10 @@
+#!/usr/bin/env nodejs
+
 const fs = require('fs');
 const express = require('express');
 const app = express();
 const EOL = require('os').EOL;
 
-#!/usr/bin/env nodejs
 var http = require('http');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
