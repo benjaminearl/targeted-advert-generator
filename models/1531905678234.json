@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "C",
+            "value": -4.737355881448582,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "N",
+            "value": 3.9461352280661757,
+            "longName": "neuroticism"
+        },
+        {
+            "name": "A",
+            "value": 1.7927192443414075,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "O",
+            "value": -1.6896126102308018,
+            "longName": "openess"
+        },
+        {
+            "name": "E",
+            "value": 0.7457353416244121,
+            "longName": "extraversion"
+        }
+    ],
+    "meta": {
+        "product": "More Jobs",
+        "gender": "female"
+    },
+    "image": "1531905678234.png"
+}

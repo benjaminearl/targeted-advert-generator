@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "C",
+            "value": 2.1763520659683326,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "N",
+            "value": 2.116567115752412,
+            "longName": "neuroticism"
+        },
+        {
+            "name": "O",
+            "value": 1.6002144821611353,
+            "longName": "openess"
+        },
+        {
+            "name": "A",
+            "value": 1.1198104951327874,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "E",
+            "value": -0.465625324079495,
+            "longName": "extraversion"
+        }
+    ],
+    "meta": {
+        "product": "No Terrorism",
+        "gender": "female"
+    },
+    "image": "1531905678999.png"
+}

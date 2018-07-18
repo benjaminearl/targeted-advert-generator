@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "E",
+            "value": -4.591207909262507,
+            "longName": "extraversion"
+        },
+        {
+            "name": "A",
+            "value": 3.8221061376386185,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "C",
+            "value": -3.290605365521142,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "O",
+            "value": 2.549481089135983,
+            "longName": "openess"
+        },
+        {
+            "name": "N",
+            "value": 2.498379711413885,
+            "longName": "neuroticism"
+        }
+    ],
+    "meta": {
+        "product": "Universal Healthcare",
+        "gender": "female"
+    },
+    "image": "1531905679267.png"
+}

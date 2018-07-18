@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "C",
+            "value": 3.693773333215276,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "E",
+            "value": -2.4270594937007606,
+            "longName": "extraversion"
+        },
+        {
+            "name": "A",
+            "value": -2.2122304687830163,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "O",
+            "value": 1.8330213383487193,
+            "longName": "openess"
+        },
+        {
+            "name": "N",
+            "value": -1.7555999126063737,
+            "longName": "neuroticism"
+        }
+    ],
+    "meta": {
+        "product": "Clean Environment",
+        "gender": "female"
+    },
+    "image": "1531905679308.png"
+}

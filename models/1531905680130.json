@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "E",
+            "value": 4.289586204376469,
+            "longName": "extraversion"
+        },
+        {
+            "name": "N",
+            "value": -2.616797411128755,
+            "longName": "neuroticism"
+        },
+        {
+            "name": "C",
+            "value": 1.7026953218898093,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "A",
+            "value": 1.2442846931431628,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "O",
+            "value": -0.3475505504695908,
+            "longName": "openess"
+        }
+    ],
+    "meta": {
+        "product": "Better Social Security",
+        "gender": "female"
+    },
+    "image": "1531905680130.png"
+}

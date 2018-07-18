@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "O",
+            "value": 3.3204201116317833,
+            "longName": "openess"
+        },
+        {
+            "name": "E",
+            "value": -3.107438607826516,
+            "longName": "extraversion"
+        },
+        {
+            "name": "A",
+            "value": 2.425799244082995,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "N",
+            "value": 2.3041991277348455,
+            "longName": "neuroticism"
+        },
+        {
+            "name": "C",
+            "value": 1.0976671927190162,
+            "longName": "conscientiousness"
+        }
+    ],
+    "meta": {
+        "product": "Accessible Public Transport",
+        "gender": "female"
+    },
+    "image": "1531905680864.png"
+}

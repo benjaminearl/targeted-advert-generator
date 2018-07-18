@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "C",
+            "value": 4.120002285634641,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "E",
+            "value": -3.1657623613253083,
+            "longName": "extraversion"
+        },
+        {
+            "name": "A",
+            "value": 2.6184636245271413,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "O",
+            "value": 0.423855681832757,
+            "longName": "openess"
+        },
+        {
+            "name": "N",
+            "value": 0.012182024523479384,
+            "longName": "neuroticism"
+        }
+    ],
+    "meta": {
+        "product": "Top Class Education",
+        "gender": "female"
+    },
+    "image": "1531905678252.png"
+}

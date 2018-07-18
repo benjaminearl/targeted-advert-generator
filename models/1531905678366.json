@@ -1,0 +1,34 @@
+{
+    "model": [
+        {
+            "name": "C",
+            "value": -4.621705995816454,
+            "longName": "conscientiousness"
+        },
+        {
+            "name": "A",
+            "value": -4.01317805767124,
+            "longName": "agreeablility"
+        },
+        {
+            "name": "O",
+            "value": 3.9551558596988095,
+            "longName": "openess"
+        },
+        {
+            "name": "E",
+            "value": 3.693652414181276,
+            "longName": "extraversion"
+        },
+        {
+            "name": "N",
+            "value": 1.6732501307080643,
+            "longName": "neuroticism"
+        }
+    ],
+    "meta": {
+        "product": "Lower Taxes",
+        "gender": "female"
+    },
+    "image": "1531905678366.png"
+}
