@@ -122,7 +122,7 @@ function appendAds(ads){
 		//if(i < 10){
 		// const model = createModel(ad);
 		const image = document.createElement('img');
-		image.src = '../generated/'+ad.image;
+		image.src = '/public/generated/'+ad.image;
 		const el = document.createElement('div');
 		el.classList.add('ad');
 		el.appendChild(image);
