@@ -106,7 +106,7 @@ function filterAds(type, value){
 
 
 function getModels(){
-	fetch('http://127.0.0.1:3000/', {
+	fetch('/data', {
 		method: 'get'
 	}).then((response) => {
 		return response.json();

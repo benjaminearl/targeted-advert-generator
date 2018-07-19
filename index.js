@@ -92,7 +92,7 @@ function createAdvert(typeObjects, meta){
 					.in("-gravity", oppositegravity)
 					.in(what.path)
 					.in(tmpFilename2)
-					.write('./interface/generated/'+timeStampInMs+'.png', function (err, b, c) {
+					.write('./public/generated/'+timeStampInMs+'.png', function (err, b, c) {
 						fs.unlinkSync(tmpFilename2);
 
 					});
@@ -101,7 +101,7 @@ function createAdvert(typeObjects, meta){
 					.command('composite')
 					.in(what.path)
 					.in(tmpFilename2)
-					.write('./interface/generated/'+timeStampInMs+'.png', function (err, b, c) {
+					.write('./public/generated/'+timeStampInMs+'.png', function (err, b, c) {
 						fs.unlinkSync(tmpFilename2);
 
 					});	
