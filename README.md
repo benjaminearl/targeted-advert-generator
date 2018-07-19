@@ -9,7 +9,5 @@ To host the app locally:
 
 [http-server](https://www.npmjs.com/package/http-server) is required, install globally.
 
-1. `cd interface`
-2. `http-server`
-3. `node server.js`
-4. open localhost in browser `http://127.0.0.1:8080`
+1. `node server.js`
+2. open localhost in browser `http://localhost:8080/`
