@@ -30,25 +30,20 @@ function getFiles() {
 	return models;
 }
 
-app.use( express.static( `targeted-advert-generator/interface` ) );
+app.use('/public', express.static(__dirname + '/public'));
 
-const path = require('path');
-app.get('/', (req, res) =>{
-	res.sendFile(path.join('targeted-advert-generator/interface/index.html'));
-})
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
 
+app.get('/data', function(req, res){
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
 
-// app.get('/', (req, res) => {
-// 	res.setHeader('Access-Control-Allow-Origin', '*');
-// 	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-// 	res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-// 	res.setHeader('Access-Control-Allow-Credentials', true);
-// 	res.send('boop')
-// });
-
-// app.get('/data', (req, res) => {
-// 	res.json({ models: getFiles() });
-// });
+    res.json({ models: getFiles() });
+});
 
 
 app.listen(3000, () => console.log('Example app listening on port 3000!')); 
