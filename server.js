@@ -2,6 +2,7 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 const EOL = require('os').EOL;
+const path = require('path');
 
 function dateSort(a, b) {
 	if (a.timestamp === b.timestamp) {
@@ -11,13 +12,13 @@ function dateSort(a, b) {
 }
 
 function getFiles() {
-	
-	const files = fs.readdirSync('./../models');
+	const modelDirectory = path.resolve(__dirname + '/models')
+	const files = fs.readdirSync(modelDirectory);
 
 	const models = [];
 	files.forEach((file, i) => {
 		if (file[0] !== '.') {
-			const fileJSON = JSON.parse(fs.readFileSync('./../models/'+file));
+			const fileJSON = JSON.parse(fs.readFileSync(modelDirectory + '/' + file));
 			models.push(fileJSON);
 
 
@@ -33,7 +34,7 @@ function getFiles() {
 app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.get('/data', function(req, res){
