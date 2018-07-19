@@ -20,9 +20,6 @@ function getFiles() {
 		if (file[0] !== '.') {
 			const fileJSON = JSON.parse(fs.readFileSync(modelDirectory + '/' + file));
 			models.push(fileJSON);
-
-
-
 		}
 	});
 
@@ -46,5 +43,4 @@ app.get('/data', function(req, res){
     res.json({ models: getFiles() });
 });
 
-
-app.listen(3000, () => console.log('Example app listening on port 3000!')); 
+app.listen(8080, () => console.log('Example app listening on port 8080!')); 
